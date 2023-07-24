@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+import 'package:get/get.dart';
+
+import 'app/routes/app_pages.dart';
+
+void main() {
+  runApp(
+    GetMaterialApp(
+      title: "Cinema App",
+      initialRoute: AppPages.INITIAL,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      getPages: AppPages.routes,
+    ),
+  );
+}
